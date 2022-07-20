@@ -55,6 +55,7 @@ composer create-project laravel/laravel pms
 cd pms
 composer install
 cp .env.example .env
+php artisan key:generate
 ```
 * ปรับการติดตั้งฐานข้อมูล .env
 MySQL แก้ไขส่วนนี้
@@ -83,7 +84,7 @@ DB_PASSWORD=
 อนุญาตนำซอต์โค้ดนี้ไปใช้เพื่อการศีึกษาเท่านั้น ในกรณีสนใจไปใช้งานในเชิงพาณิชย์ติดต่อทีมพัฒนา
 
 
-
+# องค์ความรู้
 
 
 
