@@ -16,12 +16,21 @@
 
 
 # ทรัพยากรที่ใช้
-
+* PHP >= 7.4
+* composer
+* Apache
+* Mysql & Postgresql
+* Bootstrap, HTML, CSS, Javascript
 
 
 
 
 # องค์ประกอบระบบ
+* สินค้า
+* คลังสินค้า
+* ขนส่ง
+* เจ้าหน้าที่
+* ผู้ผลิต
 
 
 
