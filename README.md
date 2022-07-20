@@ -20,6 +20,7 @@
 * composer
 * Apache
 * Mysql & Postgresql
+* Larave 9.0
 * Bootstrap, HTML, CSS, Javascript
 
 
@@ -35,7 +36,25 @@
 
 
 # วิธีที่ติดดตั้ง
+* ติดตั้ง Apache, PHP, MySQL โดยใช้ xampp เป็น Server
+* ติดตั้ง Laravel เวอร์ชั่น 9.0
+```
+composer create-project laravel/laravel pms
+cd pms
+composer install
+cp .env.example .env
+```
+* ปรับการติดตั้งฐานข้อมูล .env
+แก้ไขส่วนนี้
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=mydb
+DB_USERNAME=root
+DB_PASSWORD=
 
+```
 
 
 
