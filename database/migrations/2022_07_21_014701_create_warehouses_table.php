@@ -15,6 +15,12 @@ return new class extends Migration
     {
         Schema::create('warehouses', function (Blueprint $table) {
             $table->id();
+            $table->string('warehouse');
+            $table->string('producttype');
+            $table->integer('opacity');
+            $table->integer('size');
+            $table->string('zone');
+            $table->string('status');
             $table->timestamps();
         });
     }

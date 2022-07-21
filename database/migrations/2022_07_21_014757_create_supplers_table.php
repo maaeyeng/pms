@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('supplers', function (Blueprint $table) {
             $table->id();
+            $table->string('supplername');
+            $table->string('address');
+            $table->string('type');
+            $table->string('status');
             $table->timestamps();
         });
     }

@@ -89,9 +89,27 @@ php artisan migrate
 
 # องค์ความรู้
 * Controller
+    * ProductsController 
+        * Method: index, create, edit, store, edit, show, destroy
+    * SellerController
+    * WarehouseController
+    * TransportController
+    * OfficerController
 * Model
+    * Products 
+        * fillabel data: productname, producttype, detail 
+        * function : belogtohas
+    * Seller :
+    * Warehouse :
+    * Transport :
 * View
+    * products
+    * 
 * Route
+    * web
+        * /
+        * /proudct
+    * api
 
 
 
