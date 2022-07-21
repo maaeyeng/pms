@@ -1,5 +1,4 @@
 @extends('products.layout')
-  
 @section('content')
     <div class="card">
         <h2 class="card-title">{{ $product->productname }}</h2>

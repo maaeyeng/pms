@@ -18,3 +18,7 @@ Route::get('/', function () {
 });
 
 Route::resource('products', App\Http\Controllers\ProductsController::class);
+Route::resource('sellers', App\Http\Controllers\SellerController::class);
+Route::resource('supplers', App\Http\Controllers\SupplerController::class);
+Route::resource('transports', App\Http\Controllers\TransportController::class);
+Route::resource('warehouses', App\Http\Controllers\WarehoseController::class);

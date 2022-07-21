@@ -10,10 +10,6 @@
 * ทีมงานพัฒนา
 * ผู้สนับสนุน
 
-# บทนำ
-
-
-
 
 # ทรัพยากรที่ใช้
 * PHP >= 7.4
@@ -22,8 +18,6 @@
 * Mysql & Postgresql
 * Larave 9.0
 * Bootstrap, HTML, CSS, Javascript
-
-
 
 
 # องค์ประกอบระบบ
@@ -43,8 +37,9 @@
     * แอดทริบิว ได้แก่ รหัสผู้ผลิต ชื่อผู้ผิลติ ที่อยู่  ประเภท และเครดิตเป็นต้น
     * เมธทอด ได้แก่ เพิ่มผู้ผลิต แก้ไข ค้นหา ลบผู้ผลิต  เป็นต้น
 
-## ความสามารถของระบบ
 
+## ความสามารถของระบบ
+    * จัดการสินค้า ได้แก่ เพิ่มสินค้า แก้ไขสินค้า รับ-จ่ายสินค้า รับคืน ตัดสต๊อก จุดต่ำสุด จุดสูงสุด
 
 
 # วิธีที่ติดดตั้ง
@@ -93,14 +88,21 @@ php artisan serve
     * ProductsController 
         * Method: index, create, edit, store, edit, show, destroy
     * SellerController
+        * Method: index, create, edit, store, edit, show, destroy
     * SupplerController
+        * Method: index, create, edit, store, edit, show, destroy
     * WarehouseController
+        * Method: index, create, edit, store, edit, show, destroy
     * TransportController
+        * Method: index, create, edit, store, edit, show, destroy
     * OfficerController
+        * Method: index, create, edit, store, edit, show, destroy
+    * CustomerController
+        * Method: index, create, edit, store, edit, show, destroy
 * Model
     * Products 
         * database : productname, producttype, detail 
-        * function : belogtohas
+        * function : 
     * Seller 
         * databse :
         * function :
@@ -113,6 +115,9 @@ php artisan serve
     * Transport :
         * databse :
         * function :
+    * Customer :
+        * databse :
+        * function :
 * View
     * products : index, create, edit, show, layouts
     * warehouses : index, create, edit, show, layouts
@@ -120,6 +125,7 @@ php artisan serve
     * suppliers : index, create, edit, show, layouts
     * transports : index, create, edit, show, layouts
     * officers : index, create, edit, show, layouts
+    * customers : index, create, edit, show, layouts
 * Route
     * web
         * /
@@ -129,6 +135,7 @@ php artisan serve
         * /suppliers 
         * /transports
         * /officers
+        * /customers
     * api
         * api/proudcts
         * api/warehouses
@@ -136,6 +143,7 @@ php artisan serve
         * api/suppliers 
         * api/transports
         * api/officers
+        * api/customers
 * Service
 * Provider
 
