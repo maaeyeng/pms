@@ -51,7 +51,7 @@
 * ติดตั้ง Apache, PHP, MySQL โดยใช้ xampp เป็น Server
 * ติดตั้ง Laravel เวอร์ชั่น 9.0
 ```
-composer create-project laravel/laravel pms
+git clone https://github.com/maaeyeng/pms.git
 cd pms
 composer install
 cp .env.example .env
@@ -80,6 +80,7 @@ DB_PASSWORD=
 * ติดตั้งฐานข้อมูลระบบ
 ```
 php artisan migrate
+php artisan serve
 ``` 
 
 
@@ -101,6 +102,9 @@ php artisan migrate
         * database : productname, producttype, detail 
         * function : belogtohas
     * Seller 
+        * databse :
+        * function :
+    * Supplier  
         * databse :
         * function :
     * Warehouse :
