@@ -1,5 +1,5 @@
 # ระบบบริหารจัดการสินค้า
-โครงการนี้เป็นโครงการพัฒนา ระบบจัดการสินค้า 
+โครงการนี้เป็นโครงการพัฒนา ระบบบริหารจัดการสินค้า เพื่อสนับสนุน SME ให้สามารถเข้าถึงการใช้งานแบบฟรี หรือสำหรับนักศึกษาที่สนใจทำโครงการนำไปใช้เพื่อพัฒนาต่อยอดต่อไป 
 
 # สารบัญ
 * บทนำ
@@ -92,26 +92,48 @@ php artisan migrate
     * ProductsController 
         * Method: index, create, edit, store, edit, show, destroy
     * SellerController
+    * SupplerController
     * WarehouseController
     * TransportController
     * OfficerController
 * Model
     * Products 
-        * fillabel data: productname, producttype, detail 
+        * database : productname, producttype, detail 
         * function : belogtohas
-    * Seller :
+    * Seller 
+        * databse :
+        * function :
     * Warehouse :
+        * databse :
+        * function :
     * Transport :
+        * databse :
+        * function :
 * View
-    * products
-    * 
+    * products : index, create, edit, show, layouts
+    * warehouses : index, create, edit, show, layouts
+    * sellers : index, create, edit, show, layouts
+    * suppliers : index, create, edit, show, layouts
+    * transports : index, create, edit, show, layouts
+    * officers : index, create, edit, show, layouts
 * Route
     * web
         * /
-        * /proudct
+        * /proudcts
+        * /warehouses
+        * /sellers
+        * /suppliers 
+        * /transports
+        * /officers
     * api
-
-
+        * api/proudcts
+        * api/warehouses
+        * api/sellers
+        * api/suppliers 
+        * api/transports
+        * api/officers
+* Service
+* Provider
 
 # ทีมงานพัฒนา
 <a href="https://innovationfull.herokuapp.com">FullInnovation Team </a>
@@ -119,7 +141,7 @@ php artisan migrate
 
 
 # ผู้สนับสนุน
-ยินดีรับผู้สนับสนุนในการพัฒนาโครงการนี้
+ยินดีรับผู้สนับสนุนและผู้สนใจในการพัฒนาโครงการนี้ทุกท่าน
 
 
 
