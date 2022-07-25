@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Order;
+use App\Models\Reservation;
 use Illuminate\Http\Request;
 
-class OrderController extends Controller
+class ReservationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,6 @@ class OrderController extends Controller
     public function index()
     {
         //
-        return view('products.cart');
     }
 
     /**
@@ -37,37 +36,26 @@ class OrderController extends Controller
     public function store(Request $request)
     {
         //
-            $user = new User;
-            $request->validate([
-                
-                'customerid' =>  $userId,
-                'productId' => $productId,
-                'price' => 'required',
-                'qty' => 'required',
-               
-            ]);
-     
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Order  $order
+     * @param  \App\Models\Reservation  $reservation
      * @return \Illuminate\Http\Response
      */
-    public function show(Order $order)
+    public function show(Reservation $reservation)
     {
         //
-        
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Order  $order
+     * @param  \App\Models\Reservation  $reservation
      * @return \Illuminate\Http\Response
      */
-    public function edit(Order $order)
+    public function edit(Reservation $reservation)
     {
         //
     }
@@ -76,10 +64,10 @@ class OrderController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Order  $order
+     * @param  \App\Models\Reservation  $reservation
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Order $order)
+    public function update(Request $request, Reservation $reservation)
     {
         //
     }
@@ -87,15 +75,11 @@ class OrderController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Order  $order
+     * @param  \App\Models\Reservation  $reservation
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Order $order)
+    public function destroy(Reservation $reservation)
     {
         //
-    }
-
-    public function addOrder(){
-
     }
 }

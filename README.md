@@ -88,10 +88,6 @@ php artisan serve
 
 # องค์ความรู้
 
-| Route | Controller     | Models      | Blade  |
-| :------------ |   :---:       | --------: |
-| `Products`        | ProductsController         | `Products`   | index |
-| `Seller`         | SellerController         | `Seller`   | index |
 * Controller
     * ProductsController 
         * Method: index, create, edit, store, edit, show, dashboard
