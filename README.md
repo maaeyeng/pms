@@ -39,8 +39,11 @@
 
 
 ## ความสามารถของระบบ
-    * จัดการสินค้า ได้แก่ เพิ่มสินค้า แก้ไขสินค้า รับ-จ่ายสินค้า รับคืน ตัดสต๊อก จุดต่ำสุด จุดสูงสุด
-
+* จัดการสินค้า ได้แก่ เพิ่มสินค้า แก้ไขสินค้า รับ-จ่ายสินค้า รับคืน ตัดสต๊อก จุดต่ำสุด จุดสูงสุด
+* จัดการขนส่ง
+* จัดการผู้ผลิต
+* จัดการลูกค้า
+* จัดการคลังสินค้า
 
 # วิธีที่ติดดตั้ง
 * ติดตั้ง Apache, PHP, MySQL โดยใช้ xampp เป็น Server
@@ -86,19 +89,19 @@ php artisan serve
 # องค์ความรู้
 * Controller
     * ProductsController 
-        * Method: index, create, edit, store, edit, show, destroy
+        * Method: index, create, edit, store, edit, show, dashboard
     * SellerController
-        * Method: index, create, edit, store, edit, show, destroy
+        * Method: index, create, edit, store, edit, show, dashboard
     * SupplerController
-        * Method: index, create, edit, store, edit, show, destroy
+        * Method: index, create, edit, store, edit, show, dashboard
     * WarehouseController
-        * Method: index, create, edit, store, edit, show, destroy
+        * Method: index, create, edit, store, edit, show, dashboard
     * TransportController
-        * Method: index, create, edit, store, edit, show, destroy
+        * Method: index, create, edit, store, edit, show, dashboard
     * OfficerController
-        * Method: index, create, edit, store, edit, show, destroy
+        * Method: index, create, edit, store, edit, show, dashboard
     * CustomerController
-        * Method: index, create, edit, store, edit, show, destroy
+        * Method: index, create, edit, store, edit, show, dashboard
 * Model
     * Products 
         * database : productname, producttype, detail 

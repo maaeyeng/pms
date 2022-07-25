@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Products;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller
@@ -15,7 +16,8 @@ class ProductsController extends Controller
     public function index()
     {
         //
-        $products = Products::latest()->paginate(10);
+
+            $products = Products::latest()->paginate(10);
       
         return view('products.index',compact('products'))
             ->with('i', (request()->input('page', 1) - 1) * 5);

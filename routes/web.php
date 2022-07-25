@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\User;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,9 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/home', function(){
+    return view('home');
+});
 
 Route::resource('products', App\Http\Controllers\ProductsController::class);
 Route::resource('sellers', App\Http\Controllers\SellerController::class);
 Route::resource('supplers', App\Http\Controllers\SupplerController::class);
 Route::resource('transports', App\Http\Controllers\TransportController::class);
 Route::resource('warehouses', App\Http\Controllers\WarehoseController::class);
+Route::resource('orders', App\Http\Controllers\OrderController::class);

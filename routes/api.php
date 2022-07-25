@@ -20,5 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::resource('photos', App\Http\Controllers\PhotoController::class);
-Route::apiResource('products', ProductController::class);
+Route::Resource('products', ProductController::class);
 Route::apiResource('posts', PostController::class);
+Route::apiResource('articles', App\Http\Controllers\ArticleController::class);
